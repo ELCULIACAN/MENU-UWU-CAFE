@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UWU Café</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff8f8;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #ffb6c1;
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        nav {
+            background-color: #ffdde1;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #444;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff69b4;
+        }
+        .producto {
+            display: inline-block;
+            background: white;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 200px;
+            transition: transform 0.3s;
+        }
+        .producto:hover {
+            transform: scale(1.05);
+        }
+        .producto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            background: #ffb6c1;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    ☕ UWU Café ☕
+</header>
+
+<nav>
+    <a href="#menu">Menú</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="menu">
+    <h2>Menú</h2>
+    <div class="producto">
+        <img src="https://via.placeholder.com/200x150?text=Café+UWU" alt="Café">
+        <p><strong>Café UWU</strong></p>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/200x150?text=Waffle+UWU" alt="Waffle">
+        <p><strong>Waffle UWU</strong></p>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/200x150?text=Dona+UWU" alt="Dona">
+        <p><strong>Dona UWU</strong></p>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/200x150?text=Pastel+UWU" alt="Pastel">
+        <p><strong>Pastel UWU</strong></p>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/200x150?text=Galleta+UWU" alt="Galleta">
+        <p><strong>Galleta UWU</strong></p>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/200x150?text=Paleta+UWU" alt="Paleta">
+        <p><strong>Paleta de dulce UWU</strong></p>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>📍 Contacto</h2>
+    <p>Dirección: cp 725 , Ciudad NOVA </p>
+    <p>Tel:</p>
+</section>
+
+<footer>
+    &copy; 2025 UWU Café - Hecho con ❤️
+</footer>
+
+<script>
+    document.querySelectorAll('.producto').forEach(p => {
+        p.addEventListener('click', () => {
+            alert("¡Gracias por interesarte en " + p.innerText + "!");
+        });
+    });
+</script>
+
+</body>
+</html>
